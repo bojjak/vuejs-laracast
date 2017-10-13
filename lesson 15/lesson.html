@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>index</title>
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.css">
+
+	<style type="text/css">
+		body{
+			padding-top: 60px;
+		}
+	</style>
+
+</head>
+<body>
+	<div id="root" class="container">
+
+		<modal>
+			
+			<!-- INLINE TEMPLATE  -->
+
+			<progress-view inline-template>
+				<div>
+					<h1>your progress in course is {{ completionRate }}%</h1>
+
+					<p><button @click="completionRate += 10">Update +10</button></p>
+				</div>
+			</progress-view>
+
+		</modal>
+
+	</div>
+
+
+
+
+<!-- ////////////////////////////////////// -->
+	<script type="text/javascript" src="https://unpkg.com/vue"></script>
+
+
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
