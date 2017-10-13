@@ -15,26 +15,10 @@
 <body>
 	<div id="root" class="container">
 
-		<tabs>
-			
-			<tab name="About US" :selected="true">
-				<h1>Here is content for about us tab</h1>
-			</tab>
+		<coupon></coupon>
 
-			<tab name="About our culture">
-				<h1>Here is content for about our culture tab</h1>
-			</tab>
 
-			<tab name="About our vision">
-				<h1>Here is content for about our vision tab</h1>
-			</tab>
-
-			<tab name="About srbija">
-				<h1>Here is content for about our srbija tab</h1>
-			</tab>
-
-		</tabs>
-
+		<h1 v-if="couponApplied">you used a coupon</h1>
 	</div>
 
 
